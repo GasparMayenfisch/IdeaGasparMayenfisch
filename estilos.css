@@ -1,0 +1,218 @@
+*{
+    margin:0 ;
+    padding: 0%;
+}
+
+
+header{
+    display: flex;
+    height: 90px; 
+    width: 100%;
+    background-image:url(imagenes/engranajes2.jpg);
+    background-size: cover;
+    background-size: center;
+    border-style: solid;
+    border-color: rgba(6, 6, 7, 0.541);
+    border-width: 3px;
+    grid-area: header;
+} 
+header p{
+    flex: auto;
+    width: 30%;
+    font-size: 50px;
+    padding-left: 30px;
+    text-transform: capitalize;
+    font-family: serif;
+    color: rgb(245, 244, 241);
+    animation-name: header;
+    animation-duration: 5s;
+    animation-delay: 0;
+    animation-iteration-count: 1;
+}
+@keyframes header {
+    from{
+        opacity: 0;
+        
+    }
+    to{
+        opacity: 1;
+        transform: translateX(30px);
+    }
+}
+
+header nav{
+    float: right;
+    width:75%;
+}
+nav ul li{
+    display: inline-block;
+    margin-left: 70px;
+} 
+nav a{
+    color: darkgray;
+    text-decoration: none;
+    font-size: 25px;
+    text-transform: capitalize;
+    font-family: serif;
+}
+nav a:hover{
+    color: firebrick;
+} 
+.nav{
+    grid-area: nav;
+    height: 50px;
+    background-color: blue;
+    border-color: black;
+    border-width: 5px;
+}
+#body{
+    background-color: rgb(250, 248, 246);
+    height: 100vh;
+    
+}
+
+.grilla{
+    display: grid;
+    grid-template-areas: 
+    "header nav"
+    "main main"
+    "footer footer";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100px 100px ;
+}
+.main{
+    grid-area: main;
+    display: grid;
+    grid-template-areas: 
+    "sobrenosotros servicios ";
+    grid-template-columns: 30% 70%;
+    }
+
+.contenedorsobrenosotros{
+    grid-area: sobrenosotros;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.671);
+}
+.contenedorservicios{
+    grid-area:servicios;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.651);
+}
+.divIntroduccion{
+    font-size: 25px;
+    border-color:darkolivegreen;
+    margin-top: 20px;
+    padding-top: 25px;
+    color: rgb(245, 244, 241);
+    
+}
+.sobrenosotros{
+    color:rgb(238, 237, 236);
+    background-color: rgba(0, 0, 255, 0.829);
+    text-transform: capitalize;
+    text-shadow: cornsilk;
+    border-style: solid;
+    border-color: rgba(6, 6, 7, 0.541);
+    border-width: 3px;
+
+}
+.textoNosotros{
+    color:rgb(243, 242, 240) ;
+    font-size: 19px;
+    border-style: ridge;
+    border-color:rgba(6, 6, 7, 0.541); 
+    border-width: 3px;
+}
+.imagenes{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    flex-wrap: wrap;
+}
+.h2Servicios{
+    background-color: rgba(0, 0, 255, 0.747);
+    font-size: 25px;
+    color: rgb(226, 225, 222);
+    text-transform: capitalize;
+    border-style: solid;
+    border-color: rgba(6, 6, 7, 0.541);
+    border-width: 3px;
+}
+.tableServicios{
+    color: rgb(230, 228, 225);
+    font-size: 19px;
+    border-style: ridge;
+    border-color:rgba(6, 6, 7, 0.541); 
+    border-width: 3px;
+}
+.h3larga{
+    color:rgb(226, 225, 222); ;
+    background-color: rgba(0, 0, 255, 0.801);
+    border-style: solid;
+    border-color: rgba(6, 6, 7, 0.541);
+    border-width: 3px;
+}
+.plargaTrayectoria{
+    color:rgb(226, 225, 222);
+    font-size: 19px;
+    border-style: ridge;
+    border-color:rgba(6, 6, 7, 0.541); 
+    border-width: 3px;
+}
+#footer{
+    background-color: blue;
+    height: 100%;
+    grid-area: footer;
+}
+.h3Redes{
+    display: flex;
+    text-align: center;  
+    background-color: blue;
+    font-size: 27px;
+}
+.redSocial{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+@media only screen and (min-width:768px) and (max-width:1239px){
+.grilla{
+    display: grid;
+    grid-template-areas: 
+    "header nav"
+    "main main"
+    "footer footer";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100px 100px ;
+}
+.main{
+    grid-area: main;
+    display: grid;
+    grid-template-areas: 
+    "sobrenosotros servicios ";
+    grid-template-columns: 30% 70%;
+    }
+}
+@media only screen and (min-width:0px) and (max-width:767px){
+    .grilla{
+        display: grid;
+        grid-template-areas: 
+        "header nav"
+        "main"
+        "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 100px ;
+} 
+.main{
+    grid-area: main;
+    display: grid;
+    grid-template-areas: 
+    "sobrenosotros"
+    "servicios ";
+    grid-template-columns: 30% 70%;
+    }
+
+}
+
+    
+
+    

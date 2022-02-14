@@ -1,0 +1,86 @@
+*{
+    margin:0 ;
+    padding: 0%;
+}
+header{
+    height: 90px; 
+    width: 120%;
+    background-color:blue;
+} 
+header p{
+    flex: auto;
+    width: 30%;
+    font-size: 50px;
+    padding-left: 30px;
+    text-transform: capitalize;
+    font-family: serif;
+    color: rgb(245, 244, 241);
+    animation-name: header;
+    animation-duration: 5s;
+    animation-delay: 0;
+    animation-iteration-count: 1;
+}
+@keyframes header {
+    from{
+        opacity: 0;
+        
+    }
+    to{
+        opacity: 1;
+        transform: translateX(30px);
+    }
+}
+header nav{
+    float: right;
+    width:75%;
+}
+nav ul li{
+    display: inline-block;
+    margin-left: 70px;
+} 
+nav a{
+    color: darkgray;
+    text-decoration: none;
+    font-size: 25px;
+    text-transform: capitalize;
+    font-family: serif;
+}
+nav a:hover{
+    color: firebrick;
+} 
+#body{
+    height: 100vh;
+    width: 100%;
+    background-blend-mode: normal ;
+    background-size: cover;
+    background-image: url(imagenes/fotodefondo.jpg);
+}
+.h2introduccion{
+    color:rgb(238, 237, 236);
+    background-color: rgba(0, 0, 255, 0.836);
+    text-transform: capitalize;
+    text-shadow: cornsilk;
+    border-style: solid;
+    border-color: rgba(6, 6, 7, 0.541);
+    border-width: 3px;
+}
+.cursos{
+    min-height: 70px;
+    width: 100%;
+    color:rgb(238, 237, 236);
+    background-color:rgba(6, 6, 7, 0.726); 
+    display: flex;
+}
+#footer{
+    background-color: blue;
+    height: 90px;
+}
+.h3Redes{
+    text-align: center;  
+    background-color: blue;
+    font-size: 27px;
+}
+.redSocial{
+    display: inline-block;
+    margin-left: 10px;
+}
