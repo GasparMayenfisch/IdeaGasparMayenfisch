@@ -11,6 +11,8 @@ header{
     background-image:url(imagenes/engranajes2.jpg);
     background-size: cover;
     background-size: center;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.384),
+    );
     border-style: solid;
     border-color: rgba(6, 6, 7, 0.541);
     border-width: 3px;
@@ -62,13 +64,18 @@ nav a:hover{
     grid-area: nav;
     height: 50px;
     background-color: blue;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.466),blue);
     border-color: black;
     border-width: 5px;
 }
 #body{
-    background-color: rgb(250, 248, 246);
+    background-color: rgba(0, 0, 0, 0.377);
     height: 100vh;
     
+}
+
+.divgrilla{
+    background-image: url(imagenes/low-poly-grid-haikei\ \(1\).png);
 }
 
 .grilla{
@@ -84,10 +91,11 @@ nav a:hover{
     grid-area: main;
     display: grid;
     grid-template-areas: 
-    "sobrenosotros servicios ";
-    grid-template-columns: 30% 70%;
+    "sobrenosotros servicios "
+    "imagenes imagenes";
+    
+    grid-template-columns: 40% 60%;
     }
-
 .contenedorsobrenosotros{
     grid-area: sobrenosotros;
     width: 100%;
@@ -98,17 +106,18 @@ nav a:hover{
     width: 100%;
     background-color: rgba(0, 0, 0, 0.651);
 }
+
 .divIntroduccion{
     font-size: 25px;
     border-color:darkolivegreen;
     margin-top: 20px;
     padding-top: 25px;
     color: rgb(245, 244, 241);
-    
 }
 .sobrenosotros{
     color:rgb(238, 237, 236);
     background-color: rgba(0, 0, 255, 0.829);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.466),blue);
     text-transform: capitalize;
     text-shadow: cornsilk;
     border-style: solid;
@@ -124,12 +133,31 @@ nav a:hover{
     border-width: 3px;
 }
 .imagenes{
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    flex-wrap: wrap;
+    grid-area: imagenes;
+    display: flexbox;
+    padding-left: 20px;
+    animation-name: imagenes;
+    animation-duration: 10s;
+    animation-delay: 0;
+    animation-iteration-count: 1;
+    background-color: rgba(0, 0, 0, 0.568);
 }
+@keyframes imagenes{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(30px)
+    }
+}
+
 .h2Servicios{
     background-color: rgba(0, 0, 255, 0.747);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.466),blue);
     font-size: 25px;
     color: rgb(226, 225, 222);
     text-transform: capitalize;
@@ -147,6 +175,7 @@ nav a:hover{
 .h3larga{
     color:rgb(226, 225, 222); ;
     background-color: rgba(0, 0, 255, 0.801);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.466),blue);
     border-style: solid;
     border-color: rgba(6, 6, 7, 0.541);
     border-width: 3px;
@@ -160,6 +189,7 @@ nav a:hover{
 }
 #footer{
     background-color: blue;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.466),blue);
     height: 100%;
     grid-area: footer;
 }
@@ -167,6 +197,7 @@ nav a:hover{
     display: flex;
     text-align: center;  
     background-color: blue;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.466),blue);
     font-size: 27px;
 }
 .redSocial{
