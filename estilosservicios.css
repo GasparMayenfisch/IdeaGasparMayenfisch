@@ -55,6 +55,7 @@ nav a:hover{
     grid-area: nav;
     height: 50px;
     background-color: blue;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.466),blue);
     border-color: black;
     border-width: 5px;
 }
@@ -76,23 +77,20 @@ nav a:hover{
     grid-template-rows: 100px 100px
 }
 #main{
-    height: 120vh;
-    width: 100%;
-    background-blend-mode: normal ;
-    background-size: cover;
-    background-image: url(imagenes/fotodefondo.jpg);
+    background-image: url(imagenes/shapes.png);
 }
 .contenedormain{
     display: grid;
     grid-template-areas: 
-    "servicios clientes"
-    "proyectos imagenes";
-    grid-template-columns: 60% 40%;
+    "servicios clientes clientes"
+    "proyectos proyectos imagenes";
+    grid-template-columns: 50% 20% 30%;
 }
 .h2introduccion{
     width: 100%;
     color:rgb(238, 237, 236);
     background-color: rgba(0, 0, 255, 0.836);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.466),blue);
     text-transform: capitalize;
     text-shadow: cornsilk;
     border-style: solid;
@@ -108,23 +106,85 @@ nav a:hover{
     display: grid;
     grid-template-columns: 35% 35% 30%;
 }
+.texto1servicios{
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: justify;
+}
+.texto2servicios{
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+}
+.texto3servicios{
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+}
+.texto1servicios:hover{
+            transform: scale(1.2);
+            text-decoration: solid;
+            color: black;
+            text-shadow: gray;
+            background-color: white;
+
+}
+.texto2servicios:hover{
+    transform: scale(1.2);
+    text-decoration: solid;
+    color: black;
+    text-shadow: gray;
+    background-color: white;
+}
+.texto3servicios:hover{
+    transform: scale(1.2);
+    color: black;
+    text-decoration: solid;
+    text-shadow: gray;
+    background-color: white;
+}
+
 .imagenesservicios{
-    display: grid;
-    grid-template-columns: 35% 35% 30%;
-    grid-area: imagenes;
+    display: flexbox;
+    animation-name: imagenes;
+    animation-iteration-count: 1;
+    animation-duration: 4s;
 }
 .imagentecnicos{
     width: 300px ;
 }
+.imagentecnicos:hover{
+            transform: scale(1.3);
+}
 .imagenISO45{
     width: 300px;
+}
+.imagenISO45:hover{
+    transform: scale(1.3);
 }
 .imagenISO14{
     width: 200px;
 }
+.imagenISO14:hover{
+    transform: scale(1.3);
+}
+@keyframes imagenes {
+       0%{
+           opacity: 0;
+           
+       }     
+       50%{
+           opacity: 0.5;
+       }
+       100%{
+           opacity: 1;
+           transform: translateY(3px);
+       }
+}
 .h2Proyectos{
-    color:rgb(238, 237, 236);
+    color:rgba(238, 237, 236, 0.808);
     background-color: rgba(0, 0, 255, 0.822);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.466),blue);
     text-transform: capitalize;
     text-shadow: cornsilk;
     border-style: solid;
@@ -141,9 +201,62 @@ nav a:hover{
     grid-template-columns: 35% 35% 15% 15%;
     
 }
+.textoproyecto1{
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+
+}
+.textoproyecto2{
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+
+}
+.textoproyecto3{
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+
+}
+.textoproyecto4{
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+
+}
+.textoproyecto1:hover{
+    transform: scale(1.2);
+    text-decoration: solid;
+    color: black;
+    text-shadow: gray;
+    background-color: white;
+}
+.textoproyecto2:hover{
+    transform: scale(1.2);
+    text-decoration: solid;
+    color: black;
+    text-shadow: gray;
+    background-color: white;
+}
+.textoproyecto3:hover{
+    transform: scale(1.2);
+    text-decoration: solid;
+    color: black;
+    text-shadow: gray;
+    background-color: white;
+}
+.textoproyecto4:hover{
+    transform: scale(1.2);
+    text-decoration: solid;
+    color: black;
+    text-shadow: gray;
+    background-color: white;
+}
 .h2Clientes{
     color:rgb(238, 237, 236);
     background-color: rgba(0, 0, 255, 0.801);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.466),blue);
     text-transform: capitalize;
     text-shadow: cornsilk;
     border-style: solid;
@@ -160,14 +273,40 @@ nav a:hover{
     
 
 }
+.textoclientes1{
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+}
+.textoclientes2{
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+}
+.textoclientes1:hover{
+    transform: scale(1.2);
+    text-decoration: solid;
+    color: black;
+    text-shadow: gray;
+    background-color: white;
+}
+.textoclientes2:hover{
+    transform: scale(1.2);
+    text-decoration: solid;
+    color: black;
+    text-shadow: gray;
+    background-color: white;
+}
 #footer{
     display: flex;
     background-color: blue;
-    height: 90px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.466),blue);
+    height: 100%;
     grid-area: footer;
 }
 .h3Redes{
     text-align: center;  
+    background-image: linear-gradient(rgba(255, 255, 255, 0.466),blue);
     background-color: blue;
     font-size: 27px;
 }
