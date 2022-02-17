@@ -2,262 +2,165 @@
     margin:0 ;
     padding: 0%;
 }
-
-
-header{
-    display: flex;
-    height: 90px; 
-    width: 100%;
-    background-image:url(imagenes/engranajes2.jpg);
-    background-size: cover;
-    background-size: center;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.384),
-    );
-    border-style: solid;
-    border-color: rgba(6, 6, 7, 0.541);
-    border-width: 3px;
-    grid-area: header;
-} 
-header p{
-    flex: auto;
-    width: 30%;
-    font-size: 50px;
-    padding-left: 30px;
-    text-transform: capitalize;
-    font-family: serif;
-    color: rgb(245, 244, 241);
-    animation-name: header;
-    animation-duration: 5s;
-    animation-delay: 0;
-    animation-iteration-count: 1;
+.navbar{
+    background-color:blue;
 }
-@keyframes header {
-    from{
-        opacity: 0;
+.nav-item{
+    color: white;
+}
+#jumbotron{
+        margin-top: 0%;
+        height: 400px;
+        background-image: url(imagenes/layered-peaks-haikei.svg),url(imagenes/trabajadores2.jpg);
+        justify-content: flex-end;
+        background-size: cover;
+        background-position:center top;
         
-    }
-    to{
-        opacity: 1;
-        transform: translateX(30px);
-    }
+       
+}
+.h1jumbotron{
+        display: flex;
+        text-decoration: solid;
+        text-shadow: 20px;
+        animation-name: h1jumbotron;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+}
+@keyframes h1jumbotron{
+        0%{
+            opacity: 0;
+        }
+        50%{
+            opacity: 0.5;
+        }
+        100%{
+            opacity: 1;
+        }
+}
+.h1nosotros{
+        color: white;
+        background-color: black;
+        background-image: linear-gradient(rgba(255, 255, 255, 0.76)rgb(0, 0, 0));
+        justify-content: center;
+        text-transform: capitalize;
+        text-align: center;
+       
+}
+.section1nosotros{
+        background-color: rgba(255, 255, 255, 0.863);
+        border-radius: 10px;
+}
+.section2nosotros{
+        background-color: rgba(255, 255, 255, 0.904);
+        border-radius: 10px;
+        border-color: black;
 }
 
-header nav{
-    float: right;
-    width:75%;
+.h1servicios{
+        color: white;
+        background-color: black;
+        background-image: linear-gradient(rgba(255, 255, 255, 0.76)rgb(0, 0, 0));
+        justify-content: center;
+        text-transform: capitalize;
+        text-align: center;
+        
 }
-nav ul li{
-    display: inline-block;
-    margin-left: 70px;
-} 
-nav a{
-    color: darkgray;
-    text-decoration: none;
-    font-size: 25px;
-    text-transform: capitalize;
-    font-family: serif;
+.columna1{
+        background-color: rgba(255, 255, 255, 0.795);
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-top: 10px;
+        background-image: url(imagenes/trabajador2.jpg);
+        background-size: cover;
 }
-nav a:hover{
-    color: firebrick;
-} 
-.nav{
-    grid-area: nav;
-    height: 50px;
-    background-color: blue;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.466),blue);
-    border-color: black;
-    border-width: 5px;
+.columna2{
+        background-color: rgba(255, 255, 255, 0.795);
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-top: 10px;
+        background-image: url(imagenes/fabricaindustrial.jpg);
+        background-position: center;
+        background-size: cover;
 }
-#body{
-    background-color: rgba(0, 0, 0, 0.377);
-    height: 100vh;
+.columna3{
+    background-color: rgba(255, 255, 255, 0.795);
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-top: 10px;
+        background-image: url(imagenes/tecnicoElectrico.jpg);
+        background-position: center;
+        background-size: cover;
+}
+.columna4{
+    background-color: rgba(255, 255, 255, 0.795);
+        border-radius: 10px;
+        margin-top: 10px;
+        background-image: url(imagenes/RevisionDeEquipo.jpg);
+        background-position: center;
+        background-size: cover;
+
+}
+.columna5{
+    background-color: rgba(255, 255, 255, 0.795);
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-top: 10px;
+        background-image: url(imagenes/robot.jpg);
+        background-size: cover;
+        
+}
+.columna6{
+    background-color: rgba(255, 255, 255, 0.795);
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-top: 10px;
+        background-image: url(imagenes/trabajadores1.jpg);
+        background-position:center ;
+        background-image: url(imagenes/TecnicoAjustandoMaquinaria.jpg);
+        background-position: center;
+        background-size: cover
     
 }
 
-.divgrilla{
-    background-image: url(imagenes/shapes.png);
-    
+.columna1:hover{
+    opacity: 1.1;
+    transform: scale(1.08);
+    transition: all 9s;
 }
+.columna2:hover{
+    opacity: 1.1;
+    transform: scale(1.08);
+    transition: all 9s;
+}
+.columna3:hover{
+    opacity: 1.1;
+    transform: scale(1.08);
+    transition: all 0,8s;
+}
+.columna4:hover{
+    opacity: 1.1;
+     transform: scale(1.10);
+     transition: all 9s;
+}
+.columna5:hover{
+    opacity: 1.1;
+    transform:scale(1.08);
+    transition: all 9s;
 
-.grilla{
-    display: grid;
-    grid-template-areas: 
-    "header nav"
-    "main main"
-    "footer footer";
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 100px 100px ;
 }
-.main{
-    grid-area: main;
-    display: grid;
-    grid-template-areas: 
-    "sobrenosotros servicios "
-    "imagenes imagenes";
-    
-    grid-template-columns: 40% 60%;
-    }
-.contenedorsobrenosotros{
-    grid-area: sobrenosotros;
+.columna6:hover{
+    opacity: 1.1;
+    transform: scale(1.08);
+    transition: all 0,8s;
+}
+.pservicios{
+        background-color: rgba(0, 0, 0, 0.151);
+        border-width: 4px;
+        border-color: blue;
+        border-radius: 10px;
+}
+.footer{
+    background-image: url(imagenes/wave-haikei.svg),url(imagenes/engranajes2.jpg);
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.671);
-}
-.contenedorservicios{
-    grid-area:servicios;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.651);
-}
-
-.divIntroduccion{
-    font-size: 25px;
-    border-color:darkolivegreen;
-    margin-top: 20px;
-    padding-top: 25px;
-    color: rgb(245, 244, 241);
-}
-.sobrenosotros{
-    color:rgb(238, 237, 236);
-    background-color: rgba(0, 0, 255, 0.829);
-    background-image: linear-gradient(rgba(255, 255, 255, 0.466),blue);
-    text-transform: capitalize;
-    text-shadow: cornsilk;
-    border-style: solid;
-    border-color: rgba(6, 6, 7, 0.541);
-    border-width: 3px;
-
-}
-.textoNosotros{
-    color:rgb(243, 242, 240) ;
-    font-size: 19px;
-    display: flexbox;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-.imagenes{
-    grid-area: imagenes;
-    display: flexbox;
-    padding-left: 20px;
-    animation-name: imagenes;
-    animation-duration: 10s;
-    animation-delay: 0;
-    animation-iteration-count: 1;
-    background-color: rgba(0, 0, 0, 0.568);
-}
-@keyframes imagenes{
-    0%{
-        opacity: 0;
-    }
-    50%{
-        opacity: 0.5;
-    }
-    100%{
-        opacity: 1;
-        transform: translateX(30px)
-    }
-}
-
-.imagen1:hover{
-        transform: scale(1.3);
-}
-.imagen2:hover{
-        transform: scale(1.3);
-}
-.imagen3:hover{
-        transform: scale(1.3);
-}
-.imagen4:hover{
-        transform: scale(1.3);
-}
-.h2Servicios{
-    background-color: rgba(0, 0, 255, 0.747);
-    background-image: linear-gradient(rgba(255, 255, 255, 0.466),blue);
-    font-size: 25px;
-    color: rgb(226, 225, 222);
-    text-transform: capitalize;
-    border-style: solid;
-    border-color: rgba(6, 6, 7, 0.541);
-    border-width: 3px;
-}
-.tableServicios{
-    color: rgb(230, 228, 225);
-    font-size: 19px;
-    border-style: ridge;
-    border-color:rgba(6, 6, 7, 0.541); 
-    border-width: 3px;
-}
-.h3larga{
-    color:rgb(226, 225, 222); ;
-    background-color: rgba(0, 0, 255, 0.801);
-    background-image: linear-gradient(rgba(255, 255, 255, 0.466),blue);
-    border-style: solid;
-    border-color: rgba(6, 6, 7, 0.541);
-    border-width: 3px;
-}
-.plargaTrayectoria{
-    color:rgb(226, 225, 222);
-    font-size: 19px;
-    display: flexbox;
-    padding-left: 10px;
-    padding-right: 10px;
-    
-}
-#footer{
-    background-color: blue;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.466),blue);
     height: 100%;
-    grid-area: footer;
 }
-.h3Redes{
-    display: flex;
-    text-align: center;  
-    background-color: blue;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.466),blue);
-    font-size: 27px;
-}
-.redSocial{
-    display: inline-block;
-    margin-left: 10px;
-}
-
-@media only screen and (min-width:768px) and (max-width:1239px){
-.grilla{
-    display: grid;
-    grid-template-areas: 
-    "header nav"
-    "main main"
-    "footer footer";
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 100px 100px ;
-}
-.main{
-    grid-area: main;
-    display: grid;
-    grid-template-areas: 
-    "sobrenosotros servicios ";
-    grid-template-columns: 30% 70%;
-    }
-}
-@media only screen and (min-width:0px) and (max-width:767px){
-    .grilla{
-        display: grid;
-        grid-template-areas: 
-        "header nav"
-        "main"
-        "footer";
-    grid-template-columns: 100%;
-    grid-template-rows: 100px 100px ;
-} 
-.main{
-    grid-area: main;
-    display: grid;
-    grid-template-areas: 
-    "sobrenosotros"
-    "servicios ";
-    grid-template-columns: 30% 70%;
-    }
-
-}
-
-    
-
-    
