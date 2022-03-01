@@ -1,0 +1,210 @@
+$color1:darkred;
+
+$font1:georgia;
+$font2:verdana;
+
+*{
+    margin:0 ;
+    padding: 0%;
+}
+.navbar{
+    background-color:blue;
+}
+.nav-item{
+    color: white;
+    
+}
+#jumbotron{
+        margin-top: 0%;
+        height: 400px;
+        background-image: url(imagenes/layered-peaks-haikei.svg),url(imagenes/trabajadores2.jpg);
+        justify-content: flex-end;
+        background-size: cover;
+        background-position:center top;
+
+        h1{
+            display: flex;
+            text-decoration: solid;
+            text-shadow: 20px;
+            animation-name: h1jumbotron;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+            font-family: $font2;
+            
+            
+    }
+        p{
+            font-size: 23px;
+            color: rgba(161, 163, 163, 0.74);
+            text-shadow: 2px 2px 3px 4px
+            
+            
+
+        }
+               
+}
+
+@keyframes h1jumbotron{
+        0%{
+            opacity: 0;
+        }
+        50%{
+            opacity: 0.5;
+        }
+        100%{
+            opacity: 1;
+        }
+}
+.h1nosotros{
+        color: white;
+        background-color: black;
+        background-image: linear-gradient(rgba(255, 255, 255, 0.76)rgb(0, 0, 0));
+        justify-content: center;
+        text-transform: capitalize;
+        text-align: center;
+        
+       
+}
+.section1nosotros{
+        background-color: rgba(255, 255, 255, 0.863);
+        border-radius: 10px;
+        p{
+            font-size: 16px;
+            text-decoration:solid ;
+            text-align: justify;
+        }
+}
+.section2nosotros{
+        background-color: rgba(255, 255, 255, 0.904);
+        border-radius: 10px;
+        border-color: black;
+        p{
+            font-size: 16px;
+            text-decoration:solid ;
+            text-align: justify;
+        }
+}
+
+.h1servicios{
+        color: white;
+        background-color: black;
+        background-image: linear-gradient(rgba(255, 255, 255, 0.76)rgb(0, 0, 0));
+        justify-content: center;
+        text-transform: capitalize;
+        text-align: center;
+        
+}
+.columna1{
+        background-color: rgba(255, 255, 255, 0.795);
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-top: 10px;
+        background-image: url(imagenes/trabajador2.jpg);
+        background-size: cover;
+        p{
+            color:$color1;
+            font-family: $font1;
+        }
+}
+.columna2{
+        background-color: rgba(255, 255, 255, 0.795);
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-top: 10px;
+        background-image: url(imagenes/fabricaindustrial.jpg);
+        background-position: center;
+        background-size: cover;
+        p{
+            color: $color1;
+            font-family: $font1;
+        }
+}
+.columna3{
+    background-color: rgba(255, 255, 255, 0.795);
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-top: 10px;
+        background-image: url(imagenes/tecnicoElectrico.jpg);
+        background-position: center;
+        background-size: cover;
+        p{
+            color:$color1;
+            font-family: $font1;
+        }
+}
+.columna4{
+    background-color: rgba(255, 255, 255, 0.795);
+        border-radius: 10px;
+        margin-top: 10px;
+        background-image: url(imagenes/RevisionDeEquipo.jpg);
+        background-position: center;
+        background-size: cover;
+        p{
+            color:$color1;
+            font-family: $font1;
+        }
+
+}
+.columna5{
+    background-color: rgba(255, 255, 255, 0.795);
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-top: 10px;
+        background-image: url(imagenes/robot.jpg);
+        background-size: cover;
+        p{
+            color:$color1;
+            font-family: $font1;
+        }
+        
+}
+.columna6{
+    background-color: rgba(255, 255, 255, 0.795);
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-top: 10px;
+        background-image: url(imagenes/trabajadores1.jpg);
+        background-position:center ;
+        background-image: url(imagenes/TecnicoAjustandoMaquinaria.jpg);
+        background-position: center;
+        background-size: cover
+               
+        
+}
+
+.columna1:hover{
+    opacity: 1.1;
+    transform: scale(1.08);
+    transition: all 9s;
+}
+.columna2:hover{
+    opacity: 1.1;
+    transform: scale(1.08);
+    transition: all 9s;
+}
+.columna3:hover{
+    opacity: 1.1;
+    transform: scale(1.08);
+    transition: all 0,8s;
+}
+.columna4:hover{
+    opacity: 1.1;
+     transform: scale(1.10);
+     transition: all 9s;
+}
+.columna5:hover{
+    opacity: 1.1;
+    transform:scale(1.08);
+    transition: all 9s;
+
+}
+.columna6:hover{
+    opacity: 1.1;
+    transform: scale(1.08);
+    transition: all 0,8s;
+}
+
+.footer{
+    background-image: url(imagenes/wave-haikei.svg),url(imagenes/engranajes2.jpg);
+    
+}
