@@ -15,45 +15,23 @@
   margin-top: 0%;
   height: 400px;
   background-image: url(imagenes/layered-peaks-haikei.svg), url(imagenes/trabajadores2.jpg);
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
   background-size: cover;
   background-position: center top;
 }
-
 #jumbotron h1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-text-decoration: solid;
-          text-decoration: solid;
+  text-decoration: solid;
   text-shadow: 20px;
-  -webkit-animation-name: h1jumbotron;
-          animation-name: h1jumbotron;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
+  animation-name: h1jumbotron;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
   font-family: verdana;
 }
-
 #jumbotron p {
   font-size: 23px;
   color: rgba(161, 163, 163, 0.74);
   text-shadow: 2px 2px 3px 4px;
-}
-
-@-webkit-keyframes h1jumbotron {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 @keyframes h1jumbotron {
@@ -67,15 +45,11 @@
     opacity: 1;
   }
 }
-
 .h1nosotros {
-  color: white;
+  color: rgba(255, 255, 255, 0.863);
   background-color: black;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(black, rgba(255, 255, 255, 0.76)));
   background-image: linear-gradient(rgba(255, 255, 255, 0.76) black);
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   text-transform: capitalize;
   text-align: center;
 }
@@ -84,55 +58,47 @@
   background-color: rgba(255, 255, 255, 0.863);
   border-radius: 10px;
 }
-
 .section1nosotros p {
   font-size: 16px;
-  -webkit-text-decoration: solid;
-          text-decoration: solid;
+  text-decoration: solid;
   text-align: justify;
 }
 
 .section2nosotros {
-  background-color: rgba(255, 255, 255, 0.904);
+  background-color: rgba(255, 255, 255, 0.863);
   border-radius: 10px;
   border-color: black;
 }
-
 .section2nosotros p {
   font-size: 16px;
-  -webkit-text-decoration: solid;
-          text-decoration: solid;
+  text-decoration: solid;
   text-align: justify;
 }
 
 .h1servicios {
-  color: white;
+  color: rgba(255, 255, 255, 0.863);
   background-color: black;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(black, rgba(255, 255, 255, 0.76)));
   background-image: linear-gradient(rgba(255, 255, 255, 0.76) black);
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   text-transform: capitalize;
   text-align: center;
 }
 
 .columna1 {
-  background-color: rgba(255, 255, 255, 0.795);
+  background-color: rgba(255, 255, 255, 0.863);
   border-radius: 10px;
   margin-top: 10px;
   margin-top: 10px;
   background-image: url(imagenes/trabajador2.jpg);
   background-size: cover;
 }
-
 .columna1 p {
   color: darkred;
   font-family: georgia;
 }
 
 .columna2 {
-  background-color: rgba(255, 255, 255, 0.795);
+  background-color: rgba(255, 255, 255, 0.863);
   border-radius: 10px;
   margin-top: 10px;
   margin-top: 10px;
@@ -140,14 +106,13 @@
   background-position: center;
   background-size: cover;
 }
-
 .columna2 p {
   color: darkred;
   font-family: georgia;
 }
 
 .columna3 {
-  background-color: rgba(255, 255, 255, 0.795);
+  background-color: rgba(255, 255, 255, 0.863);
   border-radius: 10px;
   margin-top: 10px;
   margin-top: 10px;
@@ -155,7 +120,6 @@
   background-position: center;
   background-size: cover;
 }
-
 .columna3 p {
   color: darkred;
   font-family: georgia;
@@ -169,7 +133,6 @@
   background-position: center;
   background-size: cover;
 }
-
 .columna4 p {
   color: darkred;
   font-family: georgia;
@@ -183,7 +146,6 @@
   background-image: url(imagenes/robot.jpg);
   background-size: cover;
 }
-
 .columna5 p {
   color: darkred;
   font-family: georgia;
@@ -203,53 +165,42 @@
 
 .columna1:hover {
   opacity: 1.1;
-  -webkit-transform: scale(1.08);
-          transform: scale(1.08);
-  -webkit-transition: all 9s;
+  transform: scale(1.08);
   transition: all 9s;
 }
 
 .columna2:hover {
   opacity: 1.1;
-  -webkit-transform: scale(1.08);
-          transform: scale(1.08);
-  -webkit-transition: all 9s;
+  transform: scale(1.08);
   transition: all 9s;
 }
 
 .columna3:hover {
   opacity: 1.1;
-  -webkit-transform: scale(1.08);
-          transform: scale(1.08);
-  -webkit-transition: all 0,8s;
-  transition: all 0,8s;
+  transform: scale(1.08);
+  transition: all 0, 8s;
 }
 
 .columna4:hover {
   opacity: 1.1;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: all 9s;
+  transform: scale(1.1);
   transition: all 9s;
 }
 
 .columna5:hover {
   opacity: 1.1;
-  -webkit-transform: scale(1.08);
-          transform: scale(1.08);
-  -webkit-transition: all 9s;
+  transform: scale(1.08);
   transition: all 9s;
 }
 
 .columna6:hover {
   opacity: 1.1;
-  -webkit-transform: scale(1.08);
-          transform: scale(1.08);
-  -webkit-transition: all 0,8s;
-  transition: all 0,8s;
+  transform: scale(1.08);
+  transition: all 0, 8s;
 }
 
 .footer {
   background-image: url(imagenes/wave-haikei.svg), url(imagenes/engranajes2.jpg);
 }
+
 /*# sourceMappingURL=estilos.css.map */
