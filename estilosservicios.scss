@@ -34,9 +34,7 @@
 
 }
 .h2cursos{
-    color: white;
-    background-color: black;
-    height:100%
+   @extend .h2servicios
 }
 .articlecursos{
         background-color: blue;
@@ -88,7 +86,7 @@
 }
 
 .h2clientes{
-        color: white;
+        @extend .h2servicios
 }
 .footer{
     background-image: url(imagenes/wave-haikei.svg),url(imagenes/engranajes2.jpg);

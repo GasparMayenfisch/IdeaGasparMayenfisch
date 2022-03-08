@@ -4,6 +4,12 @@ $color2:rgba(255, 255, 255, 0.863);
 $font1:georgia;
 $font2:verdana;
 
+$columna:(
+    border-radius: 10px,
+    margin-top:10px,
+    margin-left:10px,  
+);
+
 *{
     margin:0 ;
     padding: 0%;
@@ -76,30 +82,17 @@ $font2:verdana;
         }
 }
 .section2nosotros{
-        background-color:$color2;
-        border-radius: 10px;
-        border-color: black;
-        p{
-            font-size: 16px;
-            text-decoration:solid ;
-            text-align: justify;
-        }
+        @extend .section1nosotros
 }
 
 .h1servicios{
-        color:$color2;
-        background-color: black;
-        background-image: linear-gradient(rgba(255, 255, 255, 0.76)rgb(0, 0, 0));
-        justify-content: center;
-        text-transform: capitalize;
-        text-align: center;
-        
+        @extend .h1nosotros
 }
 .columna1{
         background-color:$color2;
-        border-radius: 10px;
-        margin-top: 10px;
-        margin-top: 10px;
+        border-radius:map-get($map:$columna, $key:border-radius );
+        margin-top: map-get($map: $columna, $key: margin-top );
+        margin-left: map-get($map:$columna, $key:margin-left);
         background-image: url(imagenes/trabajador2.jpg);
         background-size: cover;
         p{
@@ -109,8 +102,9 @@ $font2:verdana;
 }
 .columna2{
         background-color:$color2;
-        border-radius: 10px;
-        margin-top: 10px;
+        border-radius:map-get($map: $columna, $key:border-radius );
+        margin-top:map-get($map: $columna, $key:margin-top );
+        margin-left: map-get($map:$columna, $key:margin-left);
         margin-top: 10px;
         background-image: url(imagenes/fabricaindustrial.jpg);
         background-position: center;
@@ -122,8 +116,9 @@ $font2:verdana;
 }
 .columna3{
         background-color:$color2;
-        border-radius: 10px;
-        margin-top: 10px;
+        border-radius:map-get($map: $columna, $key:border-radius);
+        margin-top:map-get($map: $columna, $key:margin-top );
+        margin-left: map-get($map:$columna, $key:margin-left);
         margin-top: 10px;
         background-image: url(imagenes/tecnicoElectrico.jpg);
         background-position: center;
@@ -135,8 +130,9 @@ $font2:verdana;
 }
 .columna4{
     background-color: rgba(255, 255, 255, 0.795);
-        border-radius: 10px;
-        margin-top: 10px;
+        border-radius:map-get($map: $columna, $key:border-radius );
+        margin-top:map-get($map: $columna, $key:margin-top );
+        margin-left: map-get($map:$columna, $key:margin-left);
         background-image: url(imagenes/RevisionDeEquipo.jpg);
         background-position: center;
         background-size: cover;
@@ -148,8 +144,9 @@ $font2:verdana;
 }
 .columna5{
     background-color: rgba(255, 255, 255, 0.795);
-        border-radius: 10px;
-        margin-top: 10px;
+        border-radius:map-get($map: $columna, $key:border-radius );
+        margin-top:map-get($map: $columna, $key:margin-top );
+        margin-left: map-get($map:$columna, $key:margin-left);
         margin-top: 10px;
         background-image: url(imagenes/robot.jpg);
         background-size: cover;
@@ -161,11 +158,9 @@ $font2:verdana;
 }
 .columna6{
     background-color: rgba(255, 255, 255, 0.795);
-        border-radius: 10px;
-        margin-top: 10px;
-        margin-top: 10px;
-        background-image: url(imagenes/trabajadores1.jpg);
-        background-position:center ;
+        border-radius:map-get($map:$columna , $key:border-radius);
+        margin-top:map-get($map:$columna , $key:margin-top);
+        margin-left: map-get($map:$columna, $key:margin-left);
         background-image: url(imagenes/TecnicoAjustandoMaquinaria.jpg);
         background-position: center;
         background-size: cover
@@ -186,7 +181,7 @@ $font2:verdana;
 .columna3:hover{
     opacity: 1.1;
     transform: scale(1.08);
-    transition: all 0,8s;
+    transition: all 9s;
 }
 .columna4:hover{
     opacity: 1.1;
@@ -202,7 +197,7 @@ $font2:verdana;
 .columna6:hover{
     opacity: 1.1;
     transform: scale(1.08);
-    transition: all 0,8s;
+    transition: all 9s;
 }
 
 .footer{
