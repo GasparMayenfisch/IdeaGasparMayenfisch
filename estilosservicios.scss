@@ -24,12 +24,17 @@
         }
 }
 
+@mixin size($height,$width,$border-radius) { 
+        height:$height ;
+        width: $width;
+        border-radius: $border-radius;
+    
+}
 .containerserv{
+            @include size(200,650px ,20px);
             background-color: rgba(0, 0, 255, 0.61);
-            border-radius: 20px;
-            margin:10px 20px;
-            width: 600px;
             border-color: black;
+            margin-top: 10px;
            
 
 }
@@ -37,9 +42,9 @@
    @extend .h2servicios
 }
 .articlecursos{
+        @include size(400px,650px,10px);
         background-color: blue;
-        border-radius: 10px;
-        height: 300px;
+        
         margin-top: 30px;
         margin-bottom: 30px;
         
@@ -62,20 +67,17 @@
         background-size: cover;
 }
 .article1:hover{
-        transform: scale(1.08);
-        transition: all 0,8s;
+        transform: scale(1.10);
+        transition: all 9s;
 }
 .article2:hover{
-        transform: scale(1.08);
-        transition: all 0,8s;
+        @extend .article1:hover
 }
 .article3:hover{
-        transform: scale(1.08);
-        transition: all 0,9s;
+        @extend .article1:hover
 }
 .article4:hover{
-        transform: scale(1.08);
-        transition: all 0,10s;
+        @extend .article1:hover
 }
 .titulocursos{
         color: white;  
