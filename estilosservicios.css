@@ -7,6 +7,12 @@
   color: white;
 }
 
+body {
+  background-image: url(imagenes/engranajesa.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
 .h2servicios, .h2cursos, .h2clientes {
   color: white;
   background-color: black;
@@ -42,12 +48,46 @@
 }
 
 .containerserv {
-  height: 200;
-  width: 650px;
-  border-radius: 20px;
-  background-color: rgba(0, 0, 255, 0.61);
+  height: 400;
+  width: 1200px;
+  border-radius: 1px;
+  border-style: solid;
+  border-width: 5px;
   border-color: black;
-  margin-top: 10px;
+  margin-top: 30px;
+  background-image: url(imagenes/engranajeslargo.jpeg);
+  background-size: cover;
+}
+
+.containerserv h5 {
+  color: white;
+  width: 102%;
+}
+
+.containerserv p {
+  font-size: 20px;
+  padding: 3px;
+  text-align: justify;
+  background-color: rgba(255, 255, 255, 0.438);
+}
+
+.containerserv h6 {
+  text-transform: capitalize;
+  color: white;
+  width: 90%;
+}
+
+.containerserv .img {
+  width: 360px;
+  height: 300px;
+}
+
+.presupuesto {
+  height: 40px;
+  width: 200px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 
 .articlecursos {
@@ -91,11 +131,147 @@
   background-color: black;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  font-size: 20px;
+}
+
+.secclientes {
+  background-color: white;
+}
+
+.client {
+  width: 100%;
+  height: 40%;
 }
 
 .footer {
-  background-image: url(imagenes/wave-haikei.svg), url(imagenes/engranajes2.jpg);
+  background-color: rgba(0, 0, 0, 0.89);
+  background-position: cover;
   width: 100%;
-  height: 100%;
+  height: 450px;
+}
+
+.afooter {
+  font-size: 30px;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 320px) {
+  .containerserv {
+    width: 300px;
+    height: 400px;
+  }
+  .containerserv h5 {
+    font-size: 15px;
+  }
+  .containerserv h6 {
+    font-size: 16px;
+  }
+  .containerserv p {
+    font-size: 13px;
+  }
+  .containerserv .img {
+    width: 70px;
+    height: 60px;
+  }
+  .articlecursos {
+    width: 310px;
+    height: 280px;
+  }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+  .containerserv {
+    width: 360px;
+    height: 400px;
+  }
+  .containerserv h5 {
+    font-size: 15px;
+  }
+  .containerserv h6 {
+    font-size: 16px;
+  }
+  .containerserv p {
+    font-size: 13px;
+  }
+  .containerserv .img {
+    width: 70px;
+    height: 60px;
+  }
+  .articlecursos {
+    width: 360px;
+    height: 290px;
+  }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+  .containerserv {
+    width: 390px;
+    height: 400px;
+  }
+  .containerserv h5 {
+    font-size: 19px;
+  }
+  .containerserv h6 {
+    font-size: 19px;
+  }
+  .containerserv p {
+    font-size: 15px;
+  }
+  .containerserv .img {
+    width: 90px;
+    height: 70px;
+  }
+  .articlecursos {
+    width: 405px;
+    height: 320px;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  .containerserv {
+    width: 740px;
+    height: 400px;
+  }
+  .containerserv h5 {
+    font-size: 23px;
+  }
+  .containerserv h6 {
+    font-size: 23px;
+  }
+  .containerserv p {
+    font-size: 19px;
+  }
+  .containerserv .img {
+    width: 160px;
+    height: 80px;
+  }
+  .articlecursos {
+    width: 365px;
+    height: 320px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .containerserv {
+    width: 950px;
+    height: 750px;
+  }
+  .containerserv h5 {
+    font-size: 40px;
+  }
+  .containerserv h6 {
+    font-size: 40px;
+  }
+  .containerserv p {
+    font-size: 35px;
+  }
+  .containerserv .img {
+    width: 200px;
+    height: 150px;
+  }
+  .articlecursos {
+    width: 480px;
+    height: 390px;
+  }
 }
 /*# sourceMappingURL=estilosservicios.css.map */

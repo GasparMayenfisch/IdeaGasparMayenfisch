@@ -5,6 +5,11 @@
 .nav-item{
     color: white;
 }
+body{
+        background-image: url(imagenes/engranajesa.jpeg);
+        background-size: cover;
+        background-position: center;
+}
 .h2servicios{
         color: white;
         background-color: black;
@@ -31,13 +36,46 @@
     
 }
 .containerserv{
-            @include size(200,650px ,20px);
-            background-color: rgba(0, 0, 255, 0.61);
+            @include size(400,1200px ,1px);            
+            border-style: solid;
+            border-width: 5px;
             border-color: black;
-            margin-top: 10px;
+            margin-top: 30px;
+            background-image:url(imagenes/engranajeslargo.jpeg);
+            background-size: cover;
+            h5{
+                    color: white;
+                    width: 102%;
+            }
+                       
+            p{
+                    font-size: 20px;
+                    padding: 3px;
+                    text-align: justify;
+                    background-color: rgba(255, 255, 255, 0.438);
+            }
+            h6{
+                text-transform: capitalize;
+                color: white;   
+                width: 90%
+                
+                    
+                    
+            }
            
-
+.img{
+        width: 360px;
+        height:300px;
 }
+}
+
+.presupuesto{
+        height: 40px;
+        width: 200px;
+        justify-content:end
+        
+}
+
 .h2cursos{
    @extend .h2servicios
 }
@@ -84,14 +122,152 @@
         background-color: black;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
+        font-size: 20px;
         
 }
+
 
 .h2clientes{
         @extend .h2servicios
 }
+.secclientes{
+        background-color: white;
+}
+.client{
+        width: 100%;
+        height: 40%;
+}
 .footer{
-    background-image: url(imagenes/wave-haikei.svg),url(imagenes/engranajes2.jpg);
-    width: 100%;
-    height: 100%;
+        background-color: rgba(0, 0, 0, 0.89);
+        background-position: cover;
+        width: 100%;
+        height: 450px;
+        
+    }
+    .afooter{
+        font-size: 30px;
+        text-decoration: none;    
+        
+    }
+
+@media only screen and (min-width:0px) and (max-width:320px) { 
+                .containerserv{
+                        width: 300px;
+                        height: 400px;
+                        h5{
+                                font-size: 15px;
+                        }
+                        h6{
+                                font-size: 16px;
+                        }
+                        p{
+                                font-size: 13px;
+                        }
+                        .img{
+                                width: 70px;
+                                height: 60px;
+                        }
+                        
+                }
+                .articlecursos{
+                        width: 310px;
+                        height: 280px;
+                }
+                
+}
+@media only screen and (min-width:321px) and (max-width:375px){
+        .containerserv{
+                width: 360px;
+                height: 400px;
+                h5{
+                        font-size: 15px;
+                }
+                h6{
+                        font-size: 16px;
+                }
+                p{
+                        font-size: 13px;
+                }
+                .img{
+                        width: 70px;
+                        height: 60px;
+                }
+                
+        }
+        .articlecursos{
+                width: 360px;
+                height: 290px;
+        }
+}
+@media only screen and (min-width:376px) and (max-width:425px){
+        .containerserv{
+                width: 390px;
+                height: 400px;
+                h5{
+                        font-size: 19px;
+                }
+                h6{
+                        font-size: 19px;
+                }
+                p{
+                        font-size: 15px;
+                }
+                .img{
+                        width: 90px;
+                        height: 70px;
+                }
+                
+        }
+        .articlecursos{
+                width: 405px;
+                height: 320px;
+        }
+}
+@media only screen and (min-width:426px) and (max-width:768px){
+        .containerserv{
+                width: 740px;
+                height: 400px;
+                h5{
+                        font-size: 23px;
+                }
+                h6{
+                        font-size: 23px;
+                }
+                p{
+                        font-size: 19px;
+                }
+                .img{
+                        width: 160px;
+                        height: 80px;
+                }
+                
+        }
+        .articlecursos{
+                width: 365px;
+                height: 320px;
+        }
+}
+@media only screen and (min-width:769px) and (max-width:1024px){
+        .containerserv{
+                width: 950px;
+                height: 750px;
+                h5{
+                        font-size: 40px;
+                }
+                h6{
+                        font-size: 40px;
+                }
+                p{
+                        font-size: 35px;
+                }
+                .img{
+                        width: 200px;
+                        height: 150px;
+                }
+                
+        }
+        .articlecursos{
+                width: 480px;
+                height: 390px;
+        }
 }

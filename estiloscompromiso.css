@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0%;
+}
+
+.navbar {
+  background-color: blue;
+  width: 100%;
+}
+
+.nav-item {
+  color: white;
+}
+
+#jumbotron1 {
+  background-image: url(imagenes/naturafondo1.jpeg);
+  height: 400px;
+  background-size: cover;
+}
+
+#jumbotron2 {
+  background-image: url(imagenes/naturafondo2.jpeg);
+  background-size: cover;
+  height: 400px;
+}
+
+.h2primero {
+  background-color: black;
+  color: white;
+  margin: 0%;
+}
+
+.sectionintro {
+  border-radius: 6px;
+  border-color: rgba(0, 0, 0, 0.801);
+  border-width: 25px;
+  background-color: rgba(133, 132, 131, 0.445);
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.spanmedidas {
+  color: rgba(0, 128, 0, 0.884);
+  font-size: 25px;
+}
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.89);
+  background-position: cover;
+  width: 100%;
+  height: 450px;
+}
+
+.afooter {
+  font-size: 30px;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 425px) {
+  .sectionintro {
+    font-size: 17px;
+  }
+  .spanmedidas {
+    font-size: 15px;
+  }
+  .pmedidas {
+    font-size: 10px;
+    width: 100%;
+  }
+  #jumbotron2 {
+    height: 600px;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  .sectionintro {
+    font-size: 23px;
+  }
+  .spanmedidas {
+    font-size: 20px;
+  }
+  .pmedidas {
+    font-size: 19px;
+    width: 100%;
+  }
+  #jumbotron2 {
+    height: 500px;
+  }
+}
+/*# sourceMappingURL=estiloscompromiso.css.map */

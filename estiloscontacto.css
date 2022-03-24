@@ -5,8 +5,27 @@
 .nav-item{
     color: white;
 }
+body{
+    background-image: url(imagenes/fabricadeturbinas.jpg);
+}
+.form-label{
+    color: white;
+    font-size: 19px;
+}
+.form-check-label{
+    color: white;
+    font-size: 16px;
+}
+
 .footer{
-    background-image: url(imagenes/wave-haikei.svg),url(imagenes/engranajes2.jpg);
+    background-color: rgba(0, 0, 0, 0.89);
+    background-position: cover;
     width: 100%;
-    height: 100%;
+    height: 450px;
+    
+}
+.afooter{
+    font-size: 30px;
+    text-decoration: none;    
+    
 }

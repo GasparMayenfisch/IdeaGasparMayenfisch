@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0%;
@@ -11,18 +12,23 @@
   color: white;
 }
 
+.tituloint {
+  color: rgba(255, 255, 255, 0.863);
+}
+
 #jumbotron {
   margin-top: 0%;
   height: 400px;
-  background-image: url(imagenes/layered-peaks-haikei.svg), url(imagenes/trabajadores2.jpg);
+  background-image: url(imagenes/back-jumbo.svg), url(imagenes/trabajadores2.jpg);
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
   background-size: cover;
   background-position: center top;
+  padding: 0%;
 }
 
-#jumbotron h1 {
+#jumbotron h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -39,9 +45,14 @@
 }
 
 #jumbotron p {
-  font-size: 23px;
-  color: rgba(161, 163, 163, 0.74);
-  text-shadow: 2px 2px 3px 4px;
+  font-size: 43px;
+  color: rgba(220, 20, 60, 0.945);
+  text-shadow: 2px 2px 3px 4px black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30px;
+  text-transform: capitalize;
 }
 
 @-webkit-keyframes h1jumbotron {
@@ -80,6 +91,16 @@
   text-align: center;
 }
 
+.introduccionsobre {
+  font-size: 33px;
+}
+
+.pilar1, .pilar2, .pilar3 {
+  font-size: 33px;
+  text-transform: capitalize;
+  color: royalblue;
+}
+
 .section1nosotros, .section2nosotros {
   background-color: rgba(255, 255, 255, 0.863);
   border-radius: 10px;
@@ -92,11 +113,18 @@
   text-align: justify;
 }
 
+.sectionser {
+  background-image: url(imagenes/sistemacañeria.jpeg);
+  background-size: cover;
+}
+
 .columna1 {
   background-color: rgba(255, 255, 255, 0.863);
   border-radius: 10px;
   margin-top: 10px;
   margin-left: 10px;
+  width: 100px;
+  height: 250px;
   background-image: url(imagenes/trabajador2.jpg);
   background-size: cover;
 }
@@ -112,6 +140,8 @@
   margin-top: 10px;
   margin-left: 10px;
   margin-top: 10px;
+  width: 100px;
+  height: 250px;
   background-image: url(imagenes/fabricaindustrial.jpg);
   background-position: center;
   background-size: cover;
@@ -128,6 +158,8 @@
   margin-top: 10px;
   margin-left: 10px;
   margin-top: 10px;
+  width: 100px;
+  height: 250px;
   background-image: url(imagenes/tecnicoElectrico.jpg);
   background-position: center;
   background-size: cover;
@@ -143,6 +175,8 @@
   border-radius: 10px;
   margin-top: 10px;
   margin-left: 10px;
+  width: 100px;
+  height: 250px;
   background-image: url(imagenes/RevisionDeEquipo.jpg);
   background-position: center;
   background-size: cover;
@@ -161,6 +195,8 @@
   margin-top: 10px;
   background-image: url(imagenes/robot.jpg);
   background-size: cover;
+  width: 100px;
+  height: 250px;
 }
 
 .columna5 p {
@@ -173,9 +209,30 @@
   border-radius: 10px;
   margin-top: 10px;
   margin-left: 10px;
+  width: 100px;
+  height: 250px;
   background-image: url(imagenes/TecnicoAjustandoMaquinaria.jpg);
   background-position: center;
   background-size: cover;
+}
+
+.boton {
+  font-size: 27px;
+  text-decoration: none;
+  color: black;
+  width: 100%;
+  height: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(blue), to(rgba(255, 255, 255, 0.705)));
+  background-image: linear-gradient(blue, rgba(255, 255, 255, 0.705));
+}
+
+#demo1, #demo2, #demo3, #demo4, #demo5, #demo6 {
+  text-decoration: none;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.747);
 }
 
 .columna1:hover {
@@ -227,6 +284,223 @@
 }
 
 .footer {
-  background-image: url(imagenes/wave-haikei.svg), url(imagenes/engranajes2.jpg);
+  background-color: rgba(0, 0, 0, 0.89);
+  background-position: cover;
+  width: 100%;
+  height: 450px;
+}
+
+.afooter {
+  font-size: 30px;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 320px) {
+  .introduccionsobre {
+    font-size: 20px;
+  }
+  .section1nosotros p, .section2nosotros p {
+    font-size: 17px;
+  }
+  .section2nosotros p {
+    font-size: 17px;
+  }
+  .pilar1, .pilar2, .pilar3 {
+    font-size: 18px;
+    height: 250px;
+  }
+  .pilar2 {
+    font-size: 18px;
+    height: 250px;
+  }
+  .pilar3 {
+    font-size: 18px;
+    height: 250px;
+  }
+  .columna1 {
+    width: 320px;
+    height: 250px;
+  }
+  .columna2 {
+    width: 320px;
+    height: 250px;
+  }
+  .columna3 {
+    width: 320px;
+    height: 250px;
+  }
+  .columna4 {
+    width: 320px;
+    height: 250px;
+  }
+  .columna5 {
+    width: 320px;
+  }
+  .columna6 {
+    width: 320px;
+    height: 200px;
+  }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+  .section1nosotros p, .section2nosotros p {
+    font-size: 25px;
+  }
+  .section2nosotros p {
+    font-size: 25px;
+  }
+  .pilar1, .pilar2, .pilar3 {
+    font-size: 27px;
+  }
+  .pilar2 {
+    font-size: 27px;
+  }
+  .pilar3 {
+    font-size: 18px;
+  }
+  .columna1 {
+    width: 375px;
+    height: 270px;
+  }
+  .columna2 {
+    width: 375px;
+    height: 270px;
+  }
+  .columna3 {
+    width: 375px;
+    height: 270px;
+  }
+  .columna4 {
+    width: 375px;
+    height: 270px;
+  }
+  .columna5 {
+    width: 375px;
+    height: 270px;
+  }
+  .columna6 {
+    width: 375px;
+    height: 270px;
+  }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 426px) {
+  .columna1 {
+    width: 425px;
+    height: 320px;
+  }
+  .columna2 {
+    width: 425px;
+    height: 320px;
+  }
+  .columna3 {
+    width: 425px;
+    height: 320px;
+  }
+  .columna4 {
+    width: 425px;
+    height: 320px;
+  }
+  .columna5 {
+    width: 425px;
+    height: 320px;
+  }
+  .columna6 {
+    width: 425px;
+    height: 320px;
+  }
+}
+
+@media only screen and (min-width: 427px) and (max-width: 769px) {
+  .columna1 {
+    width: 370px;
+    height: 300px;
+  }
+  .columna2 {
+    width: 370px;
+    height: 300px;
+  }
+  .columna3 {
+    width: 370px;
+    height: 300px;
+  }
+  .columna4 {
+    width: 370px;
+    height: 300px;
+  }
+  .columna5 {
+    width: 370px;
+    height: 300px;
+  }
+  .columna6 {
+    width: 370px;
+    height: 300px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1025px) {
+  .columna1 {
+    width: 490px;
+    height: 350px;
+  }
+  .columna2 {
+    width: 490px;
+    height: 350px;
+  }
+  .columna3 {
+    width: 490px;
+    height: 350px;
+  }
+  .columna4 {
+    width: 490px;
+    height: 350px;
+  }
+  .columna5 {
+    width: 490px;
+    height: 350px;
+  }
+  .columna6 {
+    width: 490px;
+    height: 350px;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1441px) {
+  .columna1 {
+    width: 45%;
+    height: 350px;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+  .columna2 {
+    width: 45%;
+    height: 350px;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+  .columna3 {
+    width: 45%;
+    height: 350px;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+  .columna4 {
+    width: 45%;
+    height: 350px;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+  .columna5 {
+    width: 45%;
+    height: 350px;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+  .columna6 {
+    width: 45%;
+    height: 350px;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
 }
 /*# sourceMappingURL=estilos.css.map */
