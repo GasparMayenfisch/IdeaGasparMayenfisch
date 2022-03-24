@@ -69,6 +69,8 @@ body {
   padding: 3px;
   text-align: justify;
   background-color: rgba(255, 255, 255, 0.438);
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .containerserv h6 {
@@ -132,10 +134,14 @@ body {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   font-size: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .secclientes {
   background-color: white;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .client {

@@ -53,6 +53,8 @@
   display: flex;
   width: 30px;
   text-transform: capitalize;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 @-webkit-keyframes h1jumbotron {
@@ -111,6 +113,8 @@
   -webkit-text-decoration: solid;
           text-decoration: solid;
   text-align: justify;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .sectionser {
@@ -132,6 +136,8 @@
 .columna1 p {
   color: darkred;
   font-family: georgia;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .columna2 {
@@ -150,6 +156,8 @@
 .columna2 p {
   color: darkred;
   font-family: georgia;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .columna3 {
@@ -168,6 +176,8 @@
 .columna3 p {
   color: darkred;
   font-family: georgia;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .columna4 {
@@ -185,6 +195,8 @@
 .columna4 p {
   color: darkred;
   font-family: georgia;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .columna5 {
@@ -202,6 +214,8 @@
 .columna5 p {
   color: darkred;
   font-family: georgia;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .columna6 {
